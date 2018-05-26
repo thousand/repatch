@@ -1,5 +1,8 @@
 .Nav {
-  display: flex; }
+  display: flex;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #fff; }
 
 .Nav-logotype {
   font-size: 1.4rem;
@@ -22,4 +25,5 @@
   align-self: center;
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-size: 1.4rem; }

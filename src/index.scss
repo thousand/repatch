@@ -1,8 +1,13 @@
+html { height: 100% }
+
 body {
   background: #39688f;
   color: #fff;
   font-family: 'Share Tech Mono', monospace;
   margin: 2rem;
+  padding-bottom: 6rem;
+  min-height: calc(100% - 10rem);
+  position: relative;
 }
 
 // TODO: Slim this down to just the elements that need it.
@@ -25,4 +30,7 @@ a {
   .credits p {
     margin: 0;
   }
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

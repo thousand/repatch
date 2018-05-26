@@ -1,6 +1,6 @@
 import * as React from 'react';
-import logo from './logo.svg';
-import './Nav.css';
+import logo from 'src/icons/logo.svg';
+import 'src/components/Nav.css';
 
 
 class Nav extends React.Component {

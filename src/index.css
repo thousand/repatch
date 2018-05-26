@@ -1,8 +1,14 @@
+html {
+  height: 100%; }
+
 body {
   background: #39688f;
   color: #fff;
   font-family: 'Share Tech Mono', monospace;
-  margin: 2rem; }
+  margin: 2rem;
+  padding-bottom: 6rem;
+  min-height: calc(100% - 10rem);
+  position: relative; }
 
 * {
   font-family: inherit; }
@@ -15,6 +21,9 @@ a {
 
 #footer {
   text-align: right;
-  font-size: 0.75rem; }
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 0;
+  right: 0; }
   #footer .credits p {
     margin: 0; }
