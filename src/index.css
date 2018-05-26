@@ -1,0 +1,20 @@
+body {
+  background: #39688f;
+  color: #fff;
+  font-family: 'Share Tech Mono', monospace;
+  margin: 2rem; }
+
+* {
+  font-family: inherit; }
+
+a {
+  color: inherit;
+  text-decoration-style: dashed; }
+  a:hover, a:focus, a:focus-within {
+    text-decoration-style: solid; }
+
+#footer {
+  text-align: right;
+  font-size: 0.75rem; }
+  #footer .credits p {
+    margin: 0; }

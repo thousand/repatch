@@ -1,0 +1,28 @@
+body {
+  background: #39688f;
+  color: #fff;
+  font-family: 'Share Tech Mono', monospace;
+  margin: 2rem;
+}
+
+// TODO: Slim this down to just the elements that need it.
+* {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration-style: dashed;
+
+  &:hover, &:focus, &:focus-within {
+    text-decoration-style: solid;
+  }
+}
+
+#footer {
+  text-align: right;
+  font-size: 0.75rem;
+  .credits p {
+    margin: 0;
+  }
+}

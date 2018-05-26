@@ -1,0 +1,28 @@
+.Nav {
+  display: flex;
+}
+
+.Nav-logotype {
+  font-size: 1.4rem;
+  line-height: 129%;
+  flex: 1 0;
+  align-self: stretch;
+  margin: 0;
+
+  .low { vertical-align: bottom; }
+  .high { vertical-align: top; }
+}
+
+.Nav-logo {
+  width: 5rem;
+  height: 5rem;
+  vertical-align: middle;
+}
+
+.Nav-links {
+  flex: 0 1;
+  align-self: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
