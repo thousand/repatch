@@ -1,36 +1,20 @@
-html { height: 100% }
+@import 'theme/vars';
+
+html {
+  font-size: 120%;
+}
 
 body {
-  background: #39688f;
-  color: #fff;
+  background: $background;
+  color: $foreground;
   font-family: 'Share Tech Mono', monospace;
   margin: 2rem;
   padding-bottom: 6rem;
   min-height: calc(100% - 10rem);
   position: relative;
+  line-height: 1.4;
 }
 
-// TODO: Slim this down to just the elements that need it.
-* {
-  font-family: inherit;
-}
-
-a {
-  color: inherit;
-  text-decoration-style: dashed;
-
-  &:hover, &:focus, &:focus-within {
-    text-decoration-style: solid;
-  }
-}
-
-#footer {
-  text-align: right;
-  font-size: 0.75rem;
-  .credits p {
-    margin: 0;
-  }
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
+@import 'theme/layout';
+@import 'theme/typography';
+@import 'theme/form';

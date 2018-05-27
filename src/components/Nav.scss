@@ -1,8 +1,10 @@
+@import '../theme/vars';
+
 .Nav {
   display: flex;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
-  border-bottom: 2px solid #fff;
+  border-bottom: 3px solid #fff;
 }
 
 .Nav-logotype {
@@ -14,6 +16,14 @@
 
   .low { vertical-align: bottom; }
   .high { vertical-align: top; }
+
+  a {
+    text-decoration: none;
+    text-shadow: dualShadow(2, 4, 0.06rem);
+    &:hover {
+      text-shadow: dualShadow(2, 4, 0.06rem), dualShadow(6, 8, 0.06rem);
+    }
+  }
 }
 
 .Nav-logo {
@@ -29,4 +39,11 @@
   padding: 0;
   margin: 0;
   font-size: 1.4rem;
+
+  a {
+    text-decoration: none;
+    &:hover {
+      text-shadow: dualShadow(2, 4, 0.06rem);
+    }
+  }
 }

@@ -1,0 +1,16 @@
+// TODO: Slim this down to just the elements that need it.
+a {
+  color: inherit;
+  text-decoration-style: dashed;
+
+  &:hover, &:focus, &:focus-within {
+    text-decoration-style: solid;
+  }
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: inherit;
+}

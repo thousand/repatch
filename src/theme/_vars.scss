@@ -1,0 +1,28 @@
+$background: #39688f;
+$foreground: #fff;
+
+@function dualShadow($innerDim, $outerDim, $unit) {
+  $shadows: ();
+  @for $x from 1 through $innerDim {
+    $shadows: append($shadows, $x*$unit $innerDim*$unit 0 $background, comma);
+    $shadows: append($shadows, $x*-$unit $innerDim*$unit 0 $background, comma);
+    $shadows: append($shadows, $x*$unit $innerDim*-$unit 0 $background, comma);
+    $shadows: append($shadows, $x*-$unit $innerDim*-$unit 0 $background, comma);
+    $shadows: append($shadows, $innerDim*$unit $x*$unit 0 $background, comma);
+    $shadows: append($shadows, $innerDim*$unit $x*-$unit 0 $background, comma);
+    $shadows: append($shadows, $innerDim*-$unit $x*$unit 0 $background, comma);
+    $shadows: append($shadows, $innerDim*-$unit $x*-$unit 0 $background, comma);
+  }
+  @for $y from 1 through $outerDim {
+    $shadows: append($shadows, $y*$unit $outerDim*$unit 0 $foreground, comma);
+    $shadows: append($shadows, $y*-$unit $outerDim*$unit 0 $foreground, comma);
+    $shadows: append($shadows, $y*$unit $outerDim*-$unit 0 $foreground, comma);
+    $shadows: append($shadows, $y*-$unit $outerDim*-$unit 0 $foreground, comma);
+    $shadows: append($shadows, $outerDim*$unit $y*$unit 0 $foreground, comma);
+    $shadows: append($shadows, $outerDim*-$unit $y*$unit 0 $foreground, comma);
+    $shadows: append($shadows, $outerDim*$unit $y*-$unit 0 $foreground, comma);
+    $shadows: append($shadows, $outerDim*-$unit $y*-$unit 0 $foreground, comma);
+  }
+  @return $shadows;
+}
+

@@ -1,15 +1,35 @@
 import * as React from 'react';
-import 'src/components/App.css';
-import Nav from 'src/components/Nav';
+import { Provider } from 'react-redux';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { createStore } from 'redux';
+import ModulesHome from 'src/components/modules/ModulesHome';
+import NewModule from 'src/components/modules/NewModule';
+import { repatchApp } from 'src/reducers/reducers';
 
+
+import './App.css';
+import Nav from './Nav';
+
+
+const store = createStore(repatchApp);
 
 class App extends React.Component {
   public render() {
     return (
-      <section>
-        <Nav/>
-        <main className="App"/>
-      </section>
+      <Provider store={ store }>
+        <BrowserRouter>
+          <section>
+            <Nav/>
+            <main className="App">
+              <Switch>
+                <Route exact={ true } path="/module" component={ ModulesHome }/>
+                { /*<route exact={true} path="/module/:moduleId" component={ ModuleDetail }/*/ }
+                <Route exact={ true } path="/module/new" component={ NewModule }/>
+              </Switch>
+            </main>
+          </section>
+        </BrowserRouter>
+      </Provider>
     );
   }
 }
