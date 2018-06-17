@@ -8,7 +8,7 @@ export enum ModuleActionKeys {
 export interface AddModuleAction {
   type: ModuleActionKeys.ADD_MODULE,
   name: string,
-  slug?: string,
+  slug: string,
   manufacturer?: string
 }
 
@@ -29,7 +29,7 @@ export interface OtherModuleAction {
   type: ModuleActionKeys.OTHER
 }
 
-export type ModuleActionTypes =
+export type ModuleAction =
   | AddModuleAction
   | RemoveModuleAction
   | UpdateModuleAction

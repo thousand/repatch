@@ -19,9 +19,9 @@
 
   a {
     text-decoration: none;
-    text-shadow: dualShadow(2, 4, 0.06rem);
+    text-shadow: dualShadow(3, 6, 0.05rem);
     &:hover {
-      text-shadow: dualShadow(2, 4, 0.06rem), dualShadow(6, 8, 0.06rem);
+      text-shadow: dualShadow(3, 6, 0.05rem), dualShadow(9, 12, 0.05rem);
     }
   }
 }

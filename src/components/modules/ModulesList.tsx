@@ -1,15 +1,21 @@
 import * as React from 'react';
 import 'src/components/modules/Modules.css';
+import Module from './Module';
 
 
-class ModulesList extends React.Component {
-  public render() {
-    return (
-      <section>
-        <img src="http://placekitten.com/500/500"/>
-      </section>
-    );
-  }
+export interface Props {
+  modules: ReadonlyArray<any>;
 }
 
+function ModulesList( { modules }: Props ) {
+  return (
+    <ul>
+      { modules.map(module => (
+        <li><Module/></li>
+      )) }
+    </ul>
+  );
+};
+
 export default ModulesList;
+

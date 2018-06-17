@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { createStore } from 'redux';
 import ModulesHome from 'src/components/modules/ModulesHome';
 import NewModule from 'src/components/modules/NewModule';
-import { repatchApp } from 'src/reducers/reducers';
+import { repatchApp } from 'src/reducers/repatchAppStore';
 
 
 import './App.css';

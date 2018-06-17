@@ -6,6 +6,22 @@ textarea {
   font-family: inherit;
 }
 
+button {
+  color: inherit;
+  font-size: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0.2rem 0.2rem;
+  margin: 0.2rem 0.2rem;
+  box-shadow: 0 0 0 0.1rem $background, 0 0 0 0.2rem $foreground;
+
+  &:hover, &:focus {
+    box-shadow: 0 0 0 0.1rem $background, 0 0 0 0.2rem $foreground,
+    0 0 0 0.3rem $background, 0 0 0 0.4rem $foreground;
+  }
+}
+
 input[type=text] {
   color: inherit;
   font-size: inherit;
@@ -41,3 +57,4 @@ input[type=text] {
   display: block;
   width: 100%;
 }
+
