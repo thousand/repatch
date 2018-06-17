@@ -44,7 +44,8 @@ input[type=text] {
   padding: 0;
 }
 
-.form-list-item {
+.form-list-item,
+.form-list-row {
   margin: 1rem 0;
 }
 
@@ -56,5 +57,11 @@ input[type=text] {
 .form-list-item-input {
   display: block;
   width: 100%;
+}
+
+.form-list-combined {
+  display: flex;
+  align-items: flex-end; // make things line up along the bottom
+  justify-content: space-between;
 }
 

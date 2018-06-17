@@ -69,7 +69,8 @@ input[type=text] {
   margin: 0;
   padding: 0; }
 
-.form-list-item {
+.form-list-item,
+.form-list-row {
   margin: 1rem 0; }
 
 .form-list-item-label {
@@ -79,3 +80,8 @@ input[type=text] {
 .form-list-item-input {
   display: block;
   width: 100%; }
+
+.form-list-combined {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between; }
